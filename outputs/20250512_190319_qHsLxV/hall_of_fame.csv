@@ -1,0 +1,6 @@
+Complexity,Loss,Equation
+1,45.20039,"7.452455"
+2,1.7865621,"Square(x1)"
+4,1.1726713,"Square(x1 + -0.14344376)"
+5,0.44664052,"Square(x1) + cos(x1)"
+7,0.0,"Square(x1) + (cos(x1) * 2.0)"
