@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ Bầu cử & Bình chọn Trực tuyến</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Lớp phủ background mờ */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* >>> DÒNG QUAN TRỌNG NHẤT LÀ ĐÂY <<< */
+            background-image: url('cutri1.png'); 
+            /* -------------------------------------- */
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            z-index: -1;
+            transform: scale(1.05);
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.7);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        header h1, header p {
+             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background-color: rgba(68, 68, 68, 0.7);
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 15px 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(85, 85, 85, 0.9);
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            flex-grow: 1;
+        }
+
+        h2, h3 {
+            color: #1a237e;
+            border-bottom: 2px solid #c5cae9;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-bottom: none;
+        }
+
+        .election-intro ul,
+        .election-intro ol {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        .election-intro li {
+            margin-bottom: 10px;
+        }
+
+        .poll {
+            border: 1px solid #c5cae9;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .poll h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: none;
+        }
+
+        .poll label {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 1.05em;
+        }
+
+        .poll input[type="radio"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+
+        .poll button {
+            background-color: #3f51b5;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .poll button:hover {
+            background-color: #303f9f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(51, 51, 51, 0.7);
+            color: #fff;
+            margin-top: auto;
+             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trang web Bầu cử & Bình chọn Trực tuyến</h1>
+        <p>Nơi bạn thực hiện quyền dân chủ và tham gia các cuộc bình chọn!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Thông tin Bầu cử</a></li>
+            <li><a href="#">Các cuộc bình chọn</a></li>
+            <li><a href="#">Tạo bình chọn</a></li>
+            <li><a href="#">Đăng nhập</a></li>
+            <li><a href="#">Đăng ký</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="election-intro">
+            <h2>Chào mừng đến với Thế giới Bầu cử!</h2>
+            <p>Bầu cử là trái tim của nền dân chủ...</p> 
+            <h3>Tại sao Bầu cử Quan trọng?</h3>
+             <ul>...</ul>
+            <h3>Các Nguyên tắc Vàng tại Việt Nam:</h3>
+            <p>...</p>
+            <ol>...</ol>
+            <h3>Hãy Tham gia!</h3>
+            <p>...</p>
+        </section>
+
+        <section class="featured-polls">
+            <h2>Các cuộc bình chọn nổi bật</h2>
+            <div class="poll">
+                <h3>Hệ điều hành di động nào bạn ưa thích?</h3>
+                <form>
+                    <label>
+                        <input type="radio" name="mobile_os" value="android"> Android
+                    </label>
+                    <label>
+                        <input type="radio" name="mobile_os" value="ios"> iOS
+                    </label>
+                    <button type="submit">Bình chọn</button>
+                </form>
+            </div>
+            </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trang web Bình chọn Trực tuyến. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+Biểu thức Symbolic Regression tốt nhất tìm được:
+Prev_Timestep_Temp
+
+Fitness (Sử dụng metric: 'mean absolute error'): 1.0385910418943536
+Huấn luyện trong: 170.83 giây
+Các tham số gplearn chính:
+  population_size: 1000
+  generations: 20
+  parsimony_coefficient: 0.005
+  stopping_criteria: 0.01
+  metric: mean absolute error
+  function_set: ['add', 'sub', 'mul', 'div', 'sqrt', 'log', 'sin', 'cos']
+  feature_names: ['Laser_X', 'Laser_Y', 'Laser_Z', 'Laser_Power', 'Distance_To_Laser', 'Prev_Timestep_Temp', 'Max_Neighbor_Temp', 'Min_Neighbor_Temp', 'Avg_Neighbor_Temp', 'Closest_Neighbor_Temp', 'Neighbor_Count', 'X', 'Y', 'Z']
